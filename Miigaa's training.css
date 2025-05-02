@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: -apple-system, sans-serif;
+}
+
+/*Өгсөн өнгнүүд*/
+:root {
+    --bg-color: #000;
+    --snd-bg-color: #572b2b;
+    --text-color: #fff;
+    --main-color: #45ffca;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    padding: 10rem 8% 2rem;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease;
+}
+
+.logo {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+span {
+    color: var(--main-color);
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: all 0.5s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+.nav-btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.nav-btn:hover {
+    background: var(--main-color);
+    color: var(--text-color);
+    box-shadow: 0 0 18px var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--main-color);
+    cursor: pointer;
+    display: none;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h3 {
+    font-size: 7rem;
+    font-weight: 700;
+}
+
+.home-content span {
+    font-size: 5rem;
+    font-weight: 550;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home img {
+    width: 35vw;
+}
+
+.home-img:before {
+    content: 'Fitness';
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: translateX(-50%);
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: var(--text-color);
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 1rem;
+    box-shadow: none;
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.btn:hover {
+    color: var(--text-color);
+    box-shadow: 0 0 1.6rem var(--main-color);
+}
+
+.services {
+    background: var(--bg-color);
+}
+
+.services {
+    text-align: center;
+    font-size: 6rem;
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;      
+}
+
+@media (max-width: 768px) {
+    .services-content {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+  
+@media (max-width: 480px) {
+    .services-content {
+       grid-template-columns: 1fr;
+    }
+}  
+
+        /*Дасгал*/
+
+#services h2 {
+    text-align: center;
+}
+
+.row {
+    background: var(--bg-color);
+    border-radius: 10px;
+    height: 40rem;
+    width: 25rem;
+    align-items: center;
+    border: 0.2px solid transparent;
+    box-shadow: 0 0 5px var(--main-color);
+    padding: 0.5rem;
+    transition: all 0.5 ease;
+}
+
+.row img {
+    height: 300px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.row h4 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+#хоолны-дэглэм h2 { 
+    text-align: center;
+}
+th {
+  background-color: #000;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #111;
+}
+
+        /*Хүснэгт*/
+
+#хоолны-дэглэм h2 { 
+    text-align: center;
+}
+
+.calorie-table {
+    margin-top: 2rem;
+    background: #000000;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+  
+  .calorie-table h3 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .calorie-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .calorie-table th,
+  .calorie-table td {
+    padding: 12px;
+    text-align: left;
+    color: #fff;
+    border-bottom: 1px solid #333;
+  }
+  
+  .calorie-table th {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+  
+  .calorie-table tr:hover {
+    background-color: #2a2a2a;
+  }
+  
+.bmr-calc {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #111;
+    border-radius: 10px;
+    color: #eee;
+    max-width: 400px;
+}
+  
+  .bmr-calc input,
+  .bmr-calc select {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+  
+  .bmr-calc button {
+    padding: 0.5rem 1rem;
+    background-color: #03e9f4;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+  .bmr-calc button:hover {
+    background-color: #02c3dd;
+}
+  
+  #bmr-result {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #03e9f4;
+}  
+
+.bmr-calc {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #111;
+    color: #eee;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#bmr-result {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #03e9f4;
+    margin-top: 1rem;
+}
+
+.box a:hover {
+    border-bottom: 2px solid var(--main-color);
+}
+
+.box:hover {
+    border: 1px solid var(--main-color);
+    transform: translateY(-5px) scale(1.03);
+}
+
+     /*Хувийн багш*/
+
+#Хувийн-Багш h2 { 
+    text-align: center;
+}
+.review {
+    background: var(--bg-color);
+}
+
+.review-box {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.review-box img {
+    width: 15rem;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+
+.review-item {
+    min-height: 450px;
+    min-width: 450px;
+    background: var(--bg-color);
+    border: 3px solid rgba(238, 238 , 238, 0.3);
+    border-radius: 2rem;
+    margin: 0 2rem;
+    padding: 30px 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.review-item :hover {
+    transform: translateY(-5px) scale(1.03);
+}
+
+.review-item h2 {
+    font-size: 2.8rem;
+}
+
+.review-item p {
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+#trophy {
+    color: gold;
+    font-size: 2rem;
+}
+
+    /*Footer*/
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background: var(--bg-color);
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 20px;
+    color: var(--main-color);
+}
+
+.footer .social a {
+    font-size: 40px;
+    color: var(--bg-color);
+    border: 2px soolid var(--main-color);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.footer .social a:hover {
+    transform: scale(1.2) translateY(-10px);
+    background: var(--bg-color);
+    color: #000000;
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.footer .copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--main-color);
+}
